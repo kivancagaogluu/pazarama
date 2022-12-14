@@ -1,0 +1,19 @@
+{
+    "name": "bluntk/pazarama",
+    "description": "Pazarama PHP API",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "bluntk\\": "src/bluntk/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kivancagaogluu",
+            "email": "kivancagaoglu@outlook.com.tr"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    }
+}
