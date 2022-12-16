@@ -1,6 +1,12 @@
 # pazarama
 Pazarama PHP API
 
+## Kurulum
+
+```
+composer require bluntk/pazarama
+```
+
 ## Ayarlar
 
 ```php
