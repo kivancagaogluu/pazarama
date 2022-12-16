@@ -143,7 +143,7 @@ class Pazarama
     public function createProduct($data)
     {
         $response = $this->client->request('POST', self::API_URL . 'product/create', [
-            'form_params' => $data,
+            'json' => $data,
             'headers' => [
                 'Authorization' => 'Bearer ' . $this->getAuthToken()->data->accessToken
             ]
@@ -177,7 +177,7 @@ class Pazarama
     public function updatePrice($data)
     {
         $response = $this->client->request('POST', self::API_URL . 'product/updatePrice', [
-            'form_params' => $data,
+            'json' => $data,
             'headers' => [
                 'Authorization' => 'Bearer ' . $this->getAuthToken()->data->accessToken
             ]
@@ -194,7 +194,7 @@ class Pazarama
     {
         //send request from client
         $response = $this->client->request('POST', self::API_URL . 'product/updateStock', [
-            'form_params' => $data,
+            'json' => $data,
             'headers' => [
                 'Authorization' => 'Bearer ' . $this->getAuthToken()->data->accessToken
             ]
