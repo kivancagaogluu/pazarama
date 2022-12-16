@@ -158,7 +158,7 @@ class Pazarama
      */
     public function productBatchRequest($batchRequestId)
     {
-        $response = $this->client->request('POST', self::API_URL . 'product/getProductBatchResult', [
+        $response = $this->client->request('GET', self::API_URL . 'product/getProductBatchResult', [
             'query' => [
                 'BatchRequestId' => $batchRequestId
             ],
